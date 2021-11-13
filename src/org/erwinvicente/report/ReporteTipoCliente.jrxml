@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteTipoCliente" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a2b75e8b-7b23-4b65-aa29-963080b3d30a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT * FROM TipoCliente]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descripcion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="164" splitType="Stretch">
+			<image>
+				<reportElement x="198" y="0" width="152" height="152" uuid="613d231c-0e16-4808-8fbe-3fac9cbf4041"/>
+				<imageExpression><![CDATA["C:\\Users\\esteb\\OneDrive\\Documentos\\NetBeansProjects\\IN5BV KINALMALL ERWIN VICENTE\\src\\org\\erwinvicente\\resouce\\images\\iconoMall.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="15" width="572" height="40" uuid="ca771c8e-330a-41af-8b66-07cf132a87ba"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri Light" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE TIPO CLIENTE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="48" y="66" width="487" height="1" uuid="c9bcd31e-1ec7-42cc-b579-ed27eb153b26"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement x="146" y="0" width="100" height="20" uuid="e59ef1be-0c2d-4086-89f0-dac7fc76ec98"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="365" y="0" width="100" height="20" uuid="85b893d6-7a31-4892-803e-7ad6699b6b75"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[descripcion]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<textField>
+				<reportElement x="146" y="16" width="100" height="20" uuid="359c98cb-9bfe-4cac-a0b3-0ad21f057ab4"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="365" y="16" width="100" height="20" uuid="282eca97-8e8e-458d-a9f0-05df7fc17666"/>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="24" width="572" height="20" uuid="4b49dded-aa4d-4c64-8516-2d1f21361b6d"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[ 	      Telefono 5531674]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="4" width="572" height="20" uuid="4fa675da-ad62-4598-b60e-253af023276d"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	6 Avenida 13-54, Colonia Landivar, Ciudad Guatemala]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="44" width="572" height="20" uuid="189a106b-7fc9-43cb-9e35-94bc3b9dfc22"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	      NIT 5326464-5]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="76" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

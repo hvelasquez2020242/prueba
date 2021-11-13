@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportesCuentasPorCobrar" pageWidth="1090" pageHeight="595" orientation="Landscape" columnWidth="1050" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b174f279-ae76-4404-b901-c587399ab44f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[CALL sp_ReporteCuentasPorCobrar]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numeroFactura" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mesAnio" class="java.lang.String"/>
+	<field name="valorNetoPago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estadoPago" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre_Completo" class="java.lang.String"/>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorLocal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorAdministracion" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mesesPendientes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="159" splitType="Stretch">
+			<image>
+				<reportElement x="437" y="7" width="152" height="152" uuid="6d636566-2c35-4b99-b9b4-6d095db0be03"/>
+				<imageExpression><![CDATA["C:\\Users\\esteb\\OneDrive\\Documentos\\NetBeansProjects\\IN5BV KINALMALL ERWIN VICENTE\\src\\org\\erwinvicente\\resouce\\images\\iconoMall.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="66" splitType="Stretch">
+			<line>
+				<reportElement x="48" y="52" width="955" height="1" uuid="eea3e583-cfa6-4f50-9bc7-cc406aabfed3"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="0" width="1050" height="40" uuid="b86c508f-fdb8-4928-bf33-c5945fdee05d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri Light" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE CUENTAS POR COBRAR]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="12" width="48" height="20" uuid="5b1ac91c-d98a-469c-ba3b-95890f983d15"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="12" width="82" height="20" uuid="0666a8f8-cd2d-4d7c-8bed-e46f7d5978c7"/>
+				<text><![CDATA[numeroFactura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="12" width="72" height="20" uuid="7e948438-790f-495c-bf75-f5ab12038736"/>
+				<text><![CDATA[mesAnio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="245" y="12" width="87" height="20" uuid="950096dd-54cb-4d69-83d5-dff984c8150d"/>
+				<text><![CDATA[valorNetoPago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="353" y="12" width="74" height="20" uuid="1182d6e3-9d99-4128-8426-7f9485592aa7"/>
+				<text><![CDATA[estadoPago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="437" y="12" width="100" height="20" uuid="e7133b12-ca6f-471b-8e7a-f6b5164e18e0"/>
+				<text><![CDATA[direccion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="555" y="12" width="100" height="20" uuid="4d11c69f-f211-4d1c-9b52-4d0535b3802d"/>
+				<text><![CDATA[nombre_Completo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="668" y="12" width="65" height="20" uuid="c9295468-8dc1-4cf8-a4bd-b4f3c20c0458"/>
+				<text><![CDATA[telefono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="749" y="12" width="75" height="20" uuid="b96cef20-5908-417e-b991-1db0761925c0"/>
+				<text><![CDATA[valorLocal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="842" y="12" width="100" height="20" uuid="7314b352-f35d-45e6-af1b-ef3ea54bb885"/>
+				<text><![CDATA[valorAdministracion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="950" y="12" width="100" height="20" uuid="e74024c8-790c-40fe-a1a9-80ece6bf028d"/>
+				<text><![CDATA[mesesPendientes]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="46" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="15" width="48" height="20" uuid="e4c3f1a3-bcee-4580-8fd2-66041951a051"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="15" width="82" height="20" uuid="1fb34a21-aafb-40e4-a85b-c87cc0bec249"/>
+				<textFieldExpression><![CDATA[$F{numeroFactura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="162" y="15" width="72" height="20" uuid="ec1f6536-4af1-4463-80e3-28dee18e2793"/>
+				<textFieldExpression><![CDATA[$F{mesAnio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="245" y="15" width="87" height="20" uuid="f90ec858-3688-4911-9141-b6cad477ba64"/>
+				<textFieldExpression><![CDATA[$F{valorNetoPago}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="15" width="74" height="20" uuid="97cbc665-6dda-402e-9671-0b28317df8a4"/>
+				<textFieldExpression><![CDATA[$F{estadoPago}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="437" y="15" width="100" height="20" uuid="75ea7d5c-cf9e-4892-b636-c639f14d43a5"/>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="555" y="15" width="100" height="20" uuid="901058df-7c33-47c3-ad56-cc2c15dc99f5"/>
+				<textFieldExpression><![CDATA[$F{nombre_Completo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="668" y="15" width="65" height="20" uuid="9b4119c2-cb24-4372-a36a-910f6a68d223"/>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="749" y="15" width="75" height="20" uuid="6056db35-8643-474c-a300-0e6e1a42deea"/>
+				<textFieldExpression><![CDATA[$F{valorLocal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="842" y="15" width="100" height="20" uuid="494e2e2d-7a55-4633-8eb4-399d6bae3c4b"/>
+				<textFieldExpression><![CDATA[$F{valorAdministracion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="950" y="15" width="100" height="20" uuid="3f9ae88b-bdab-4bec-8eae-863992cf4fa5"/>
+				<textFieldExpression><![CDATA[$F{mesesPendientes}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="69" splitType="Stretch">
+			<staticText>
+				<reportElement x="6" y="40" width="1044" height="20" uuid="eb864cf1-5645-4c16-a938-87c023253e5f"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	      NIT 5326464-5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="6" y="20" width="1044" height="20" uuid="64d269dd-258f-4af7-90c3-b02bd8f07fbe"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[ 	      Telefono 5531674]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="0" width="1044" height="20" uuid="d52e1ecd-ddbf-4ef9-926d-9aa13ffd1521"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	6 Avenida 13-54, Colonia Landivar, Ciudad Guatemala]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

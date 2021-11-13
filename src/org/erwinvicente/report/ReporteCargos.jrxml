@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2977a2ca-ac36-4283-b14b-8d52dc453d64">
+	<property name="ireport.zoom" value="1.1"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="239"/>
+	<queryString>
+		<![CDATA[SELECT * FROM Cargos]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="180" splitType="Stretch">
+			<image>
+				<reportElement x="198" y="14" width="152" height="152" uuid="74edb151-f6f6-4fe1-8125-030cc375022b"/>
+				<imageExpression><![CDATA["C:\\Users\\esteb\\OneDrive\\Documentos\\NetBeansProjects\\IN5BV KINALMALL ERWIN VICENTE\\src\\org\\erwinvicente\\resouce\\images\\iconoMall.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="51" y="16" width="487" height="40" uuid="6525ef36-0aeb-4eda-8cc2-39f76d0ba006"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri Light" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE CARGOS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="51" y="70" width="487" height="1" uuid="8f7c2d01-d53e-4b81-8813-04902378640f"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="116" y="13" width="100" height="20" uuid="9c652d1b-30a4-4ca0-b02c-787e228dc04a"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="375" y="13" width="100" height="20" uuid="247b1f95-a389-4e5f-9040-741fb065b108"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[nombre]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="51" splitType="Stretch">
+			<textField>
+				<reportElement x="116" y="18" width="100" height="20" uuid="d85b9f15-7f17-446c-81db-0be29d171cef"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="375" y="18" width="100" height="20" uuid="a4da8e4d-36c3-4824-b4e1-d9a5086370c1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="88" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="50" width="562" height="20" uuid="ef23602e-6427-47eb-938a-e03b29b5cbf1"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	      NIT 5326464-5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="10" y="30" width="562" height="20" uuid="189fdf4a-b351-4801-a476-df1a68dfcbdd"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[ 	      Telefono 5531674]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="10" width="562" height="20" uuid="02cb8532-3fea-437c-9f46-4801b564f995"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	6 Avenida 13-54, Colonia Landivar, Ciudad Guatemala]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

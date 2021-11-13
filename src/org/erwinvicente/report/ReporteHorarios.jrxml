@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteHorarios" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="10262608-0036-4cb5-a36d-3f26543e2b51">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[
+call sp_ReporteHorario]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="horarioEntrada" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="horarioSalida" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lunes" class="java.lang.String"/>
+	<field name="martes" class="java.lang.String"/>
+	<field name="miercoles" class="java.lang.String"/>
+	<field name="jueves" class="java.lang.String"/>
+	<field name="viernes" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="159" splitType="Stretch">
+			<image>
+				<reportElement x="288" y="7" width="152" height="152" uuid="77f4bfaf-f83e-44f9-9d9b-7704fb30eb94"/>
+				<imageExpression><![CDATA["C:\\Users\\esteb\\OneDrive\\Documentos\\NetBeansProjects\\IN5BV KINALMALL ERWIN VICENTE\\src\\org\\erwinvicente\\resouce\\images\\iconoMall.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="68" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="752" height="40" uuid="6630fc86-89b4-466b-b4e5-3ef4ce4c9fcf"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri Light" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE TIPO CLIENTE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="48" y="51" width="667" height="1" uuid="b6356417-5e75-425e-b52a-88c9d2ede2a6"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="12" width="48" height="20" uuid="30ea7e37-0d8b-4b04-a2ba-2cc45fdac119"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="12" width="100" height="20" uuid="b88fad07-024f-480a-b319-ce97f35a30b2"/>
+				<text><![CDATA[horarioEntrada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="12" width="100" height="20" uuid="f1f5ad37-0377-497d-b936-7805e3c96c1f"/>
+				<text><![CDATA[horarioSalida]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="12" width="47" height="20" uuid="d3796cf2-3d5a-45fe-b12c-c6cb6c5d6a98"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[lunes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="12" width="55" height="20" uuid="c68aa160-78d1-42d0-a94d-457c5af067f5"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[martes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="516" y="12" width="68" height="20" uuid="0de362b3-704f-4523-a0d3-b58e5fb5a914"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[miercoles]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="603" y="12" width="63" height="20" uuid="b32328d5-9363-476b-aa50-34afe5494f6e"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[jueves]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="678" y="12" width="61" height="20" uuid="18296999-3d98-4dbf-b0a3-b47a011ef562"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[viernes]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="41" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="13" width="48" height="20" uuid="c0a27975-efa4-4b7e-9ee9-49b4dd0d5285"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="97" y="13" width="100" height="20" uuid="9187542b-97f0-44b3-8493-7235fdc3f9ec"/>
+				<textFieldExpression><![CDATA[$F{horarioEntrada}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="13" width="100" height="20" uuid="f67eb1c0-47cd-4ec5-a0fc-e2f970ad1db3"/>
+				<textFieldExpression><![CDATA[$F{horarioSalida}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="13" width="47" height="20" uuid="2cbe4f12-bad7-4e01-aa0d-61156842abb9"/>
+				<textFieldExpression><![CDATA[$F{lunes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="13" width="55" height="20" uuid="6f69eb3f-f3f6-4953-b7e3-3cb4f3c540f8"/>
+				<textFieldExpression><![CDATA[$F{martes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="516" y="13" width="68" height="20" uuid="6fa1615e-98ad-42c4-8af5-70a4c7981c46"/>
+				<textFieldExpression><![CDATA[$F{miercoles}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="603" y="13" width="63" height="20" uuid="55da7ecf-a707-4ae6-b25e-3ddd32de6d67"/>
+				<textFieldExpression><![CDATA[$F{jueves}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="678" y="13" width="61" height="20" uuid="acd50bb4-c6f3-49bd-8aef-5951ad83a19a"/>
+				<textFieldExpression><![CDATA[$F{viernes}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="31" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="43" width="752" height="20" uuid="8d75cbfb-d4d3-4c18-9575-a85b932d5b42"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	      NIT 5326464-5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3" width="752" height="20" uuid="d303d46a-3a73-454a-a5b9-a5a018038925"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	6 Avenida 13-54, Colonia Landivar, Ciudad Guatemala]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="23" width="752" height="20" uuid="bc189395-281c-46d2-bae6-ef30b1f87348"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[ 	      Telefono 5531674]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 3, 2021, 12:34:10 AM
+    Author     : esteb
+*/
+
+.menu-bar {
+    -fx-background-color: skyblue;
+    -fx-opacity: 0.9;
+}
+
+.menu-bar .label{
+    -fx-text-fill:black;
+    -fx-font-size: 16;
+    -fx-font-family: Candara;
+    
+}

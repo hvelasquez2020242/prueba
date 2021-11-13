@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteLocales" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1aa383a5-96e1-4f1f-ad28-e98a20764860">
+	<property name="ireport.zoom" value="1.2100000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT * FROM Locales]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="saldoFavor" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="saldoContra" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mesesPendientes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="disponibilidad" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorLocal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorAdministracion" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="158" splitType="Stretch">
+			<image>
+				<reportElement x="267" y="6" width="152" height="152" uuid="83ff7381-f20a-401c-abc4-e6238d959e71"/>
+				<imageExpression><![CDATA["C:\\Users\\esteb\\OneDrive\\Documentos\\NetBeansProjects\\IN5BV KINALMALL ERWIN VICENTE\\src\\org\\erwinvicente\\resouce\\images\\iconoMall.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="71" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="752" height="40" uuid="9cde9862-72d4-4001-b429-decb247923d2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri Light" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE LOCALES]]></text>
+			</staticText>
+			<line>
+				<reportElement x="48" y="51" width="667" height="1" uuid="6caf2764-ebbf-4f89-b3c1-dbaf4bde202e"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="60" height="20" uuid="95ddcf84-cc1a-4e40-be9f-b4bef44ce29d"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="1" width="84" height="20" uuid="26826c0a-7cce-495c-9700-6fdfe2900d1b"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[saldoFavor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="0" width="78" height="20" uuid="7634f654-50b9-43e0-86ed-ecf915af7da7"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[saldoContra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="296" y="1" width="112" height="20" uuid="dd7d8ef1-db10-4739-a8e2-8667786c2e90"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[mesesPendientes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="1" width="100" height="20" uuid="6a248a74-6891-476e-be1d-d4f3e7a248a6"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[disponibilidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="544" y="0" width="68" height="20" uuid="dc238527-982a-4bc1-b5d7-78e70f631e23"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[valorLocal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="629" y="0" width="123" height="20" uuid="33d4afe1-1172-4e4a-a669-29f12fb9c486"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[valorAdministracion]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="48" height="20" uuid="8dd0e3f8-736e-4c5d-8a28-f73da3670735"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="0" width="84" height="20" uuid="9c158030-d146-4e0c-96a9-aa8816a2f588"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{saldoFavor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="189" y="0" width="78" height="20" uuid="3586c2b9-bd06-494f-ba5e-f74a6a24eda6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{saldoContra}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="0" width="97" height="20" uuid="6264081c-cb32-463b-ab56-7adb73ce61a6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{mesesPendientes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="432" y="0" width="100" height="20" uuid="667ad8fe-2d88-4e86-a0c6-f30339368f36"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{disponibilidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="544" y="0" width="68" height="20" uuid="1ba63a21-9181-44fa-aab2-bb5496a497d6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{valorLocal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="629" y="0" width="100" height="20" uuid="2a53cb93-afed-4fd6-a4f1-f236833e0db3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{valorAdministracion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="71" splitType="Stretch"/>
+	</columnFooter>
+	<summary>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="-41" y="20" width="793" height="20" uuid="477fa53a-7390-4c78-bff9-d58c2c5f7a67"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[ 	      Telefono 5531674]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-41" y="40" width="793" height="20" uuid="bbc44cac-73c4-47f3-ab56-6343f1325160"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	      NIT 5326464-5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-41" y="0" width="793" height="20" uuid="e21c5078-a2a7-4232-80c7-92bb2fc8416d"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	6 Avenida 13-54, Colonia Landivar, Ciudad Guatemala]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

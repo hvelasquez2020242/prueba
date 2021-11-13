@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteCuentasPorPagar" pageWidth="1000" pageHeight="595" orientation="Landscape" columnWidth="960" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="99dfacf0-8c10-426d-b580-6dd189dc3021">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[call sp_ReporteCuentasPorPagar]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numeroFactura" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaLimitePago" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estadoPago" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorNetoPago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nit" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="servicioPrestado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="saldoFavor" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="saldoContra" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="159" splitType="Stretch">
+			<image>
+				<reportElement x="373" y="7" width="152" height="152" uuid="05d9837c-af10-434d-b675-6153547229fd"/>
+				<imageExpression><![CDATA["C:\\Users\\esteb\\OneDrive\\Documentos\\NetBeansProjects\\IN5BV KINALMALL ERWIN VICENTE\\src\\org\\erwinvicente\\resouce\\images\\iconoMall.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="960" height="40" uuid="21c7e70a-cbb9-4068-9f7a-c6b475ad921b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri Light" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE CUENTAS POR PAGAR]]></text>
+			</staticText>
+			<line>
+				<reportElement x="48" y="52" width="871" height="1" uuid="8e286fce-6f8a-43c6-bf6c-ad4f90559604"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="12" width="61" height="20" uuid="2e914f1f-ac45-43de-94af-b5fa92ecd268"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="12" width="89" height="20" uuid="fdf8b700-2e64-440c-bd78-e877019b2ef6"/>
+				<text><![CDATA[numeroFactura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="12" width="100" height="20" uuid="805af638-a135-4d45-856c-24e89fe4ed6c"/>
+				<text><![CDATA[fechaLimitePago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="12" width="68" height="20" uuid="f71ec30b-e830-497f-94c9-f24445e2fd87"/>
+				<text><![CDATA[estadoPago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="12" width="100" height="20" uuid="0a35f535-d7f3-49f0-9b55-fc0374d64862"/>
+				<text><![CDATA[valorNetoPago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="525" y="12" width="65" height="20" uuid="7a50a63e-0b94-4091-83ef-6c8460093e38"/>
+				<text><![CDATA[direccion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="623" y="12" width="63" height="20" uuid="36cb03d7-0aa8-412c-8567-c1ba059a1991"/>
+				<text><![CDATA[nit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="698" y="12" width="80" height="20" uuid="daf644ae-3461-40a6-9576-1aa32d772ea1"/>
+				<text><![CDATA[servicioPrestado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="802" y="12" width="78" height="20" uuid="d17490df-9743-430d-b2d2-7efde5d470bc"/>
+				<text><![CDATA[saldoFavor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="898" y="12" width="62" height="20" uuid="704f1374-6d8a-45a1-a1f6-365814ba0e6b"/>
+				<text><![CDATA[saldoContra]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="52" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="61" height="20" uuid="5f052095-46be-4442-9298-5fb8945e8933"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="72" y="0" width="89" height="20" uuid="1d2b87d7-1430-4077-89bf-99b6a7fe993a"/>
+				<textFieldExpression><![CDATA[$F{numeroFactura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="183" y="0" width="100" height="20" uuid="892970fa-5b9a-440e-ac0c-8110c535db39"/>
+				<textFieldExpression><![CDATA[$F{fechaLimitePago}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="0" width="83" height="20" uuid="b27aedce-9b5b-41ad-872b-c0ec75cbad38"/>
+				<textFieldExpression><![CDATA[$F{estadoPago}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="0" width="100" height="20" uuid="d777e0af-e7c8-4d16-aed2-ed8af74b25d7"/>
+				<textFieldExpression><![CDATA[$F{valorNetoPago}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="525" y="0" width="85" height="20" uuid="94a12432-c5a1-49bb-a34f-980c64c7b9ed"/>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="623" y="0" width="63" height="20" uuid="363866dc-bde6-4d90-be61-c310b8faa684"/>
+				<textFieldExpression><![CDATA[$F{nit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="698" y="0" width="69" height="20" uuid="a2ab8fa4-27b2-4f80-80fb-b343fac469b7"/>
+				<textFieldExpression><![CDATA[$F{servicioPrestado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="802" y="0" width="78" height="20" uuid="83c407c1-2a3c-4eb0-9762-d10b322cb7ab"/>
+				<textFieldExpression><![CDATA[$F{saldoFavor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="898" y="0" width="62" height="20" uuid="6c9af95d-e9db-442d-ab22-35cefbff39e8"/>
+				<textFieldExpression><![CDATA[$F{saldoContra}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="43" width="960" height="20" uuid="5c6412da-c33e-4b0a-9942-c47c938de3c3"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	      NIT 5326464-5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3" width="960" height="20" uuid="c0c2d38b-0305-41a4-8c4f-d9fc5a05ec7b"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	6 Avenida 13-54, Colonia Landivar, Ciudad Guatemala]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="23" width="960" height="20" uuid="816ab6e1-ee1d-40dc-ad5b-4f62d6b70f80"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[ 	      Telefono 5531674]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.erwinvicente.controller.AutorController">
+   <children>
+      <Label layoutX="170.0" layoutY="50.0" text="Acerca del autor" textFill="#29a4c3">
+         <font>
+            <Font name="Georgia" size="36.0" />
+         </font></Label>
+      <Label layoutX="300.0" layoutY="135.0" text="Nombre:" textFill="#c366a7">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="183.0" text="Grado:" textFill="#c366a7">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="233.0" text="Jornada:" textFill="#c366a7">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="290.0" text="Seccion:" textFill="#c366a7">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="136.0" prefHeight="18.0" prefWidth="212.0" text="Erwin Esteban Vicente Hernandez" textFill="#29a4c3">
+         <font>
+            <Font name="Georgia" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="183.0" text="5to Perito" textFill="#29a4c3">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="233.0" text="Vespertina" textFill="#29a4c3">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="290.0" text="IN5BV" textFill="#29a4c3">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="191.0" fitWidth="280.0" layoutX="7.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resouce/images/Autor.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="67.0" layoutX="533.0" layoutY="7.0" onMouseClicked="#MostrarVistaMenuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resouce/images/botonAtras.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

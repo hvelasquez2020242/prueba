@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteClientes" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="93aea43a-5979-4d8b-ae20-07648b133cbe">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[call sp_reporteClientes]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombres" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellidos" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipo_cliente" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="159" splitType="Stretch">
+			<image>
+				<reportElement x="314" y="7" width="152" height="152" uuid="1b3e8467-b88c-4fd1-8de0-a043d1721672"/>
+				<imageExpression><![CDATA["C:\\Users\\esteb\\OneDrive\\Documentos\\NetBeansProjects\\IN5BV KINALMALL ERWIN VICENTE\\src\\org\\erwinvicente\\resouce\\images\\iconoMall.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="64" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="40" uuid="bd108d89-63a1-437b-9a6c-07182e19dc0b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri Light" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE CLIENTES]]></text>
+			</staticText>
+			<line>
+				<reportElement x="48" y="52" width="707" height="1" uuid="904a1325-57ff-4893-9668-f5bcd653c437"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="38" height="20" uuid="9875c1a9-d5d2-4636-b958-f1744081a5d1"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="75" y="0" width="68" height="20" uuid="3e0a02af-05d8-4998-842e-f5c15b922fc8"/>
+				<text><![CDATA[nombres]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="0" width="65" height="20" uuid="1d2320f7-da6d-4e22-baa8-2d6adce5be6b"/>
+				<text><![CDATA[apellidos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="314" y="0" width="73" height="20" uuid="3611efae-4cd1-46b5-9bc4-6730b22f2cc9"/>
+				<text><![CDATA[telefono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="0" width="85" height="20" uuid="0e52fe97-cea0-483f-849b-072b8138e460"/>
+				<text><![CDATA[direccion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="564" y="0" width="100" height="20" uuid="cb665452-1a4a-440b-8a0e-26f5a8f2e74f"/>
+				<text><![CDATA[email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="0" width="100" height="20" uuid="7d0f149f-2cd6-4ab8-912b-0dcfa0f5286e"/>
+				<text><![CDATA[tipo_cliente]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="65" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="16" width="48" height="20" uuid="bbdb1247-003f-42de-a03c-16a8b8c9e403"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="75" y="16" width="80" height="20" uuid="1d81e851-80a0-4f81-a8ae-f47d17636d49"/>
+				<textFieldExpression><![CDATA[$F{nombres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="16" width="65" height="20" uuid="800a1c28-14dd-4051-ae3e-b13b2e32dea3"/>
+				<textFieldExpression><![CDATA[$F{apellidos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="314" y="16" width="73" height="20" uuid="26929842-6401-45a7-af0c-a328981f4057"/>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="426" y="16" width="117" height="20" uuid="b81a9686-549f-42f8-87a6-8bd8771c69fa"/>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="564" y="16" width="100" height="20" uuid="4847dc8c-c0bc-4a67-9b1a-13b10e4eeb40"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="16" width="100" height="20" uuid="7af182ad-a271-453d-a227-8eae11d4cb71"/>
+				<textFieldExpression><![CDATA[$F{tipo_cliente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="22" width="802" height="22" uuid="9eef9b09-6ee8-4499-9932-191c9ff9834d"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[ 	      Telefono 5531674]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="42" width="802" height="22" uuid="ad97174a-6ea4-4360-bada-8159e5d1f04a"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	      NIT 5326464-5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="2" width="802" height="22" uuid="1b38e53a-5ea9-418a-b4d2-439d66201920"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[	6 Avenida 13-54, Colonia Landivar, Ciudad Guatemala]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
